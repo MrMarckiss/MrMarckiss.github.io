@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+</head>
+<body style="margin: 0px;overflow: hidden;">
+    <a-scene embedded arjs>
+        <a-assets>
+              <a-asset-item id="modelo" src="./F-16D.gltf"></a-asset-item>
+            </a-assets>
+          <!-- <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box> -->
+          <!-- <a-entity gltf-model="#tree" scale="0.01 0.01 0.01 "></a-entity> -->
+          <a-marker-camera preset='hiro'>
+              <!-- <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box> -->
+              <a-entity gltf-model="#modelo" scale="0.05 0.05 0.05"></a-entity>
+              <a-entity light="type: hemisphere; color:#fefddd; groundColor: #fefddd; intensity: 1.2"></a-entity>
+          </a-marker-camera>
+        </a-scene>
+</body>
+</html>
