@@ -1,7 +1,7 @@
 *{
 margin: 0;
 padding: 0;
-box-sizing: content-box;
+box-sizing: border-box;
 font-family: sans-serif;
 }
 body{
@@ -10,27 +10,27 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 0 10px;
+    padding: 0 20px;
     color: white;
     overflow:  hidden;
 }
 body::before{
     content: "";
     position: absolute;
-    width: 110%;
+    width: 100%;
     height: 100%;
-    background-image:url("../IMG/Fondo_Login.jpg");
+    background-image:url("../IMG/jigly.jpg");
     background-position: center;
     background-size: cover;
     z-index: -1;
 }
-.wrapper{
-    width: 490px;
+.inside{
+    width: 400px;
     border-radius: 8px;
     padding: 30 px;
     text-align: center;
     border: 1px solid #ffffff80;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(8px);
 }
 form{
     display: flex;
@@ -38,11 +38,39 @@ form{
 }
 h2{
     font-size: 2.5 rem;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #fff;
 }
 .input-field{
     position: relative;
     border-bottom: 2px solid #ccc;
-    margin: 15px 0;
+    margin: 20px 0;
+}
+.input-field label{
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.15s ease;
+    padding-left: 10px;
+}
+.input-field input{
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background: transparent;
+    border:none;
+    outline: none;
+    font-size: 15px;
+    padding-left: 10px;
+
+}
+.input-field input:focus~label,
+.input-field input:focus~label{
+    font-size: 0.8rem;
+     top: 	15px;
+     transform: translateY(-140%);
 }
