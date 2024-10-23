@@ -1,53 +1,67 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #e0e5f2;
     color: #333;
 }
-#slidebar{
+
+/* Cabecera y Navegación */
+#cabecera-principal {
     background-color: #3a4b64;
     color: white;
     padding: 20px 40px;
 }
-#menu-navegation{
+
+#menu-navegacion {
     list-style: none;
     display: flex;
     gap: 20px;
 }
-#menu-navegation a{
+
+#menu-navegacion a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
+
 #menu-navegacion a:hover {
     text-decoration: underline;
 }
-#seccion-main{
+
+/* Sección Principal */
+#seccion-principal {
     text-align: center;
     padding: 40px;
 }
-#seccion-main h1{
+
+#seccion-principal h1 {
     font-size: 36px;
     margin-bottom: 10px;
 }
-#seccion-review{
+
+/* Sección de Reseñas */
+#seccion-reseñas {
     padding: 50px;
     text-align: center;
 }
-#seccion-review h2{
+
+#seccion-reseñas h2 {
     font-size: 30px;
     margin-bottom: 30px;
 }
-#container-game{
+
+#contenedor-juegos {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-.target-game{
+
+.tarjeta-juego {
     flex-basis: 30%;
     max-width: 350px;
     background-color: #f8f8f8;
@@ -56,14 +70,25 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
-.target-game:hover{
+
+.tarjeta-juego:hover {
     transform: scale(1.05);
 }
-.target-game h3{
+
+.tarjeta-juego img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tarjeta-juego h3 {
     font-size: 24px;
     margin: 10px 0;
 }
-#final{
+
+/* Pie de Página */
+#pie-pagina {
     background-color: #3a4b64;
     color: white;
     padding: 10px;
