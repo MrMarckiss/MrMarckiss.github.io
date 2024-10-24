@@ -38,7 +38,7 @@ body {
 .seccion-hero{
     position: relative;
     height: 500px;
-    background-image: url("/IMG/encabezado.jpg");
+    background-image: url("/IMG/encabezado.webp");
     background-size: cover;
     background-position: center;
     display: flex;
