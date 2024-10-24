@@ -35,6 +35,9 @@ body {
 #menu-navegacion a:hover {
     text-decoration: underline;
 }
+body.load-image .seccion-hero {
+    background-image: url("/IMG/encabezado.webp");
+ }
 .seccion-hero{
     position: relative;
     height: 500px;
