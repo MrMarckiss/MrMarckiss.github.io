@@ -38,6 +38,11 @@ body {
 body.load-image .seccion-hero {
     background-image: url("/IMG/encabezado.webp");
  }
+ .icono i {
+    font-size: 40px;
+    color: #4a6cf7;
+    margin-bottom: 20px;
+}
 .seccion-hero{
     position: relative;
     height: 500px;
