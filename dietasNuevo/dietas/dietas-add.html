@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+</head>
+<body class="d-flex">
+    <!-- SIDEBAR -->
+    <aside class="d-flex" style="width: 20%;">
+        <div class="text-white p-3 vh-100 w-100" style="background-color: rgb(64 11 133) !important;">
+            <h2 class="h6 text-center">ACME</h2>
+            <nav>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="./admin.html" class="nav-link text-white">
+                            <i class="bi bi-house"></i>&nbsp;&nbsp;&nbsp;Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./users.html" class="nav-link text-white">
+                            <i class="bi bi-person"></i>&nbsp;&nbsp;&nbsp;Usuarios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./dietas.html" class="nav-link text-white">
+                            <i class="bi bi-egg"></i>&nbsp;&nbsp;&nbsp;Dietas
+                        </a>
+                    </li>
+
+
+                </ul>
+            </nav>
+
+        </div>
+
+    </aside>
+    <!-- END SIDEBAR -->
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow-1">
+        <header class="pt-4">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a href="" class="navbar-brand">Mi Dashboard</a>
+                    
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav">
+                            <li class="navbar-item mx-4">
+                                <button type="button" class="btn btn-ligth position-relative">
+                                    <i class="bi bi-bell"></i>
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                      99+
+                                      <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                  </button>
+                            </li>
+                            <li class="navbar-item mx-1">
+                                <img style="border:3px solid rgb(8, 90, 8);width: 40px; height: 40px;border-radius: 50%;"  src="./img/profile.jpg" alt="">
+                            </li>
+                            <li class="navbar-item dropdown">
+                                <a href="" class="nav-link dropdown-toggle" 
+                                    id="userDropdown" role="button" 
+                                    data-bs-toggle="dropdown" aria-expanded="false">Hermione Granger</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                    <li>
+                                        <a href="" class="dropdown-item"> 
+                                            <i class="bi bi-person"></i> 
+                                            Perfil
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+                                    <li>
+                                        <a href="" class="dropdown-item">
+                                            <i class="bi bi-box-arrow-left"></i>
+                                            Cerrar Sesión
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+
+                            </li>
+                           
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </nav>
+        </header>
+        <section class="container mt-4 p-4">
+
+            
+            <!--TITLE SECTION-->
+            <div class="d-flex justify-content-between">
+                <h4>Agregar Dieta</h4>
+                <a class="btn btn-outline-danger"  href="../dietas.html">
+                    <i class="bi bi-arrow-left"></i>
+                    Volver
+                </a>
+            </div>
+            <!--TITLE SECTION-->
+            <!--  DATA -->
+            <div class="row px-4">
+                <div class="row mt-4">
+
+                    <div class="col-3">
+                        <label for="">Nombre</label>
+                        <input required type="text" class="form-control" placeholder="Inserta el nombre">
+                        <div class="valid-feedback">Correcto</div>
+                        <div class="invalid-feedback">Nombre no valido</div>
+                    </div>
+                    <div class="col-3">
+                        <label for="">Descripción</label>
+                        <input required type="text" class="form-control" placeholder="Inserta la descripción">
+                        <div class="valid-feedback">Correcto</div>
+                        <div class="invalid-feedback">Descripción no valido</div>
+                    </div>
+                    <div class="col-3">
+                        <label for="">Imagen</label>
+                        <input required type="file" class="form-control" placeholder="Inserta la descripción">
+                    </div>
+                    <div class="col-3">
+                        <label for="">Total Calorías</label>
+                        <input required type="number" min="1" class="form-control" placeholder="# de calorías">
+                        <div class="valid-feedback">Correcto</div>
+                        <div class="invalid-feedback">Dato valido</div>
+                    </div>
+
+
+                </div>
+                <div class="row py-4">
+                    <div class="col-3">
+                        <label for="">Categoría</label>
+                        <select class="form-control">
+                            <option value="1">Desayuno</option>
+                            <option value="2">Comida</option>
+                        </select>
+                    </div>
+                    <div class="col-9">
+                        <label for="">Procedimiento</label>
+                        <input required type="text" class="form-control" placeholder="Inserta el Procedimiento">
+                        <div class="valid-feedback">Correcto</div>
+                        <div class="invalid-feedback">Procedimiento no valido</div>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <h2 class="h4">Ingredientes</h2>
+                <div class="row py-4">
+                    <div class="col-5">
+                        <label for="">Ingrediente</label>
+                        <select class="form-control">
+                            <option value="1">Pechuga</option>
+                            <option value="2">Lechuga</option>
+                        </select>
+                    </div>
+                    <div class="col-5">
+                        <label for="">Cantidad</label>
+                        <input required type="number" class="form-control" placeholder="Inserta la Cantidad">
+                        <div class="valid-feedback">Correcto</div>
+                        <div class="invalid-feedback">No valido</div>
+                    </div>
+                    <div class="col-2 text-end pt-3">
+                        <button class="btn btn-dark mt-4 btn-sm">
+                            <i class="bi bi-arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Ingrediente</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col" style="width: 4rem;"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Pechuga</td>
+                            <td>2</td>
+                            <td>
+                                <button class="btn btn-outline-danger btn-sm mx-1">
+                                    <i class="bi bi-trash2"></i>
+                                </button>
+                            </td>
+                          </tr>
+                          
+                        
+                        </tbody>
+                      </table>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button class="btn btn-success">
+                        <i class="bi bi-floppy"></i>  Guardar
+                    </button>
+                </div>
+
+            </div>
+            <!--  END DATA -->
+            
+
+        </section>
+    </main>
+    <!--END MAIN CONTENT -->
+    <!-- Modal -->
+    <div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar usuario</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" class="needs-validation" novalidate id="form">
+                    <div class="modal-body">
+                        <div class="row py-2">
+                            <div class="col-6">
+                                <label for="">Nombre</label>
+                                <input required type="text" class="form-control" placeholder="Inserta el nombre">
+                                <div class="valid-feedback">Correcto</div>
+                                <div class="invalid-feedback">Nombre no valido</div>
+                            </div>
+                            <div class="col-6">
+                                <label for="">Apellido</label>
+                                <input type="text" class="form-control" placeholder="Apellido paterno y materno">
+                            </div>
+
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-4">
+                                <label for="">Edad</label>
+                                <input type="number" class="form-control" placeholder="Edad">
+                            </div>
+                            <div class="col-4">
+                                <label for="">Peso</label>
+                                <input type="number" class="form-control" placeholder="Peso">
+                            </div>
+                            <div class="col-4">
+                                <label for="">Altura</label>
+                                <input type="number" class="form-control" placeholder="Altura">
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-12">
+                                <label for="">Email</label>
+                                <input type="email" class="form-control" placeholder="Inserta el email">
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-6">
+                                <label for="">Password</label>
+                                <input type="password" class="form-control" placeholder="Inserta tu password">
+                            </div>
+                            <div class="col-6">
+                                <label for="">Confirmar Password</label>
+                                <input type="password" class="form-control" placeholder="Confirma tu password">
+                            </div>
+                        </div>
+                        <div class="alert alert-danger mt-4 d-none" id="divAlerta" role="alert">
+                            Favor de llenar los campos
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary" id="btnGuardar">Guardar</button>
+                    </div>
+            </form>
+        </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/users.js"></script>
+
+</body>
+</html>
